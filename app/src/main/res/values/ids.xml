@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imgAfis" type="id" />
+    <item name="txtFilmAdi" type="id" />
+    <item name="txtYil" type="id" />
+    <item name="txtTur" type="id" />
+    <item name="imgYil" type="id" />
+    <item name="imgTur" type="id" />
+    <item name="txtPuan" type="id" />
+    <item name="imgPuan" type="id" />
+</resources>

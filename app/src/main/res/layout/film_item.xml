@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgAfis"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtFilmAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgAfis"
+        app:layout_constraintTop_toTopOf="@+id/imgAfis" />
+
+    <TextView
+        android:id="@+id/txtYil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imgYil"
+        app:layout_constraintTop_toTopOf="@+id/imgYil" />
+
+    <TextView
+        android:id="@+id/txtTur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtYil"
+        app:layout_constraintTop_toTopOf="@+id/imgTur" />
+
+    <ImageView
+        android:id="@+id/imgYil"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txtFilmAdi"
+        app:layout_constraintTop_toBottomOf="@+id/txtFilmAdi"
+        app:srcCompat="@drawable/ic_takvim" />
+
+    <ImageView
+        android:id="@+id/imgTur"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/txtFilmAdi"
+        app:layout_constraintTop_toBottomOf="@+id/imgYil"
+        app:srcCompat="@drawable/ic_film" />
+
+    <TextView
+        android:id="@+id/txtPuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPuan"
+        app:layout_constraintStart_toEndOf="@+id/imgPuan" />
+
+    <ImageView
+        android:id="@+id/imgPuan"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toEndOf="@+id/txtYil"
+        app:layout_constraintTop_toTopOf="@+id/txtYil"
+        app:srcCompat="@drawable/ic_yildiz"
+        app:tint="#FFEB3B" />
+</androidx.constraintlayout.widget.ConstraintLayout>
